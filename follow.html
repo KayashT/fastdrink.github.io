@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FastDrink</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css"/>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		ym(15393181, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+		});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/15393181" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+    </head>
+	<body>
+		<header>
+			<div class="header"> 
+				<h1 class="header-logo">
+                        <!-- Настечка добавила возврат на главную-->
+                        <a href="index1.html" class="index"> 
+                            <img src="images/logo.svg" alt="FastDrink"/>
+                        </a>
+				</h1>
+				<ul class="icons">
+				<li> 
+					<a href="lk.html" class="person">
+						<img src="images/lk.svg" alt="Личный кабинет"/>
+					</a> 
+				</li>
+				<li>
+					<a href="basket.html" class="basket">
+						<img src="images/basket.svg" alt="Корзина"/>
+					</a>
+				</li></ul>
+			</div>
+		</header>		
+		<main>
+			<section class="name">
+				<h2>
+					Подписка
+				</h2>
+				<header class="address-geo">
+					<h3> 
+						Адрес доставки 
+					</h3>
+					<a href='https://www.google.ru/maps/@59.9658738,30.3055626,13z' class="geo">
+						<img src="images/geo.svg" alt="Геопозиция"/>
+					</a>
+				</header>
+				<input type="text" class="address-stroke" placeholder="Введите адрес доставки">
+				<a href='https://www.google.ru/maps' class="ukazatel" >
+					указать на карте
+				</a>	
+                <h3>Кофейня</h3>
+                <!-- селект-инпут -->
+                <input type="text" class="cafe" placeholder="Выберите кофейню">  
+                </section>
+                <section class="order">
+                    <header class="order-add">
+                    <h3>
+                        Заказ
+                    </h3>
+                    <a href='Place1.html' class="add">
+						<img src="images/add.svg" alt="Геопозиция"/>
+                    </a>
+                    </header>
+                <ul class="drinki">
+                        <li class="drink">
+                            <div class="press_drink">
+                                <h4>
+                                    Американо
+                                </h4>
+                                <div class="tri">
+                                    <svg height="32" aria-label="Развернуть" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 8 H28 L16 26 z"/></svg>
+                                </div>
+                            </div>
+                            <div class="choice">
+                            <ul class="size">
+                                <li class="button_size">
+                                    <input name="radio_size" type="radio" id="drinks-americano" checked> 
+                                    <label for="drinks-americano">0,3</label>
+                                </li>
+                                <li class="button_size">
+                                    <input name="radio_size" type="radio" id="drinks-espresso"> 
+                                    <label for="drinks-espresso">0,4</label>
+                                </li>
+                                <li class="button_size">
+                                    <input name="radio_size" type="radio" id="drinks-latte"> 
+                                    <label for="drinks-latte">0,5</label>
+                                </li>
+                            </ul>
+                            <fieldset>
+                                <legend>
+                                    Сиропы
+                                </legend>
+                                <ul class="siropi">
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_vanilla">
+                                        <label for="sirop_vanilla">Ваниль</label>
+                                    </li>
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_cocos">
+                                        <label for="sirop_cocos">Кокос</label>
+                                    </li>
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_chocolate">
+                                        <label for="sirop_chocolate">Шоколад</label>
+                                    </li>
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_caramel">
+                                        <label for="sirop_caramel">Карамель</label>
+                                    </li>
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_salted_caramel">
+                                        <label for="sirop_salted_caramel">Соленая карамель</label>
+                                    </li>
+                                    <li class="sirop">
+                                        <input type="checkbox" id="sirop_banana">
+                                        <label for="sirop_banana">Банан</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    Молоко
+                                </legend>
+                            <ul class="milks">
+                                        <li class="milk">
+                                            <input name="radio_milk" type="radio" id="milk_cow">
+                                            <label for="milk_cow">Коровье</label>
+                                        </li>
+                                        <li class="milk">
+                                                <input name="radio_milk" type="radio" id="milk_cocos">
+                                                <label for="milk_cocos">Кокосовое</label>
+                                        </li>
+                                        <li class="milk">
+                                            <input name="radio_milk" type="radio" id="sirop_oat">
+                                            <label for="sirop_oat">Овсяное</label>
+                                        </li>
+                                        <li class="milk">
+                                                <input name="radio_milk" type="radio" id="sirop_almond">
+                                                <label for="sirop_almond">Миндальное</label>
+                                        </li>	
+                                </ul>
+                            </fieldset>
+                            <div class="count">
+                                <label for="c">Количество</label>
+                                <button type="button" class="minus">
+                                    -
+                                </button>
+                                <input type="number" value="1" min="1" step="1" id="c">
+                                <button type="button" class="plus">
+                                    +
+                                </button>
+                            </div>
+                        </div>	
+                        </li>
+                        <li class="drink">
+                                <div class="press_drink">
+                                    <h4>
+                                        Эспрессо
+                                    </h4>
+                                    <div class="tri">
+                                        <svg height="32" aria-label="Развернуть" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 8 H28 L16 26 z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="choice">
+                                <ul class="size">
+                                    <li class="button_size">
+                                        <input name="radio_size" type="radio" id="drinks-americano" checked> 
+                                        <label for="drinks-americano">0,3</label>
+                                    </li>
+                                    <li class="button_size">
+                                        <input name="radio_size" type="radio" id="drinks-espresso"> 
+                                        <label for="drinks-espresso">0,4</label>
+                                    </li>
+                                    <li class="button_size">
+                                        <input name="radio_size" type="radio" id="drinks-latte"> 
+                                        <label for="drinks-latte">0,5</label>
+                                    </li>
+                                </ul>
+                                <fieldset>
+                                    <legend>
+                                        Сиропы
+                                    </legend>
+                                    <ul class="siropi">
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_vanilla">
+                                            <label for="sirop_vanilla">Ваниль</label>
+                                        </li>
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_cocos">
+                                            <label for="sirop_cocos">Кокос</label>
+                                        </li>
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_chocolate">
+                                            <label for="sirop_chocolate">Шоколад</label>
+                                        </li>
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_caramel">
+                                            <label for="sirop_caramel">Карамель</label>
+                                        </li>
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_salted_caramel">
+                                            <label for="sirop_salted_caramel">Соленая карамель</label>
+                                        </li>
+                                        <li class="sirop">
+                                            <input type="checkbox" id="sirop_banana">
+                                            <label for="sirop_banana">Банан</label>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>
+                                        Молоко
+                                    </legend>
+                                <ul class="milks">
+                                            <li class="milk">
+                                                <input name="radio_milk" type="radio" id="milk_cow">
+                                                <label for="milk_cow">Коровье</label>
+                                            </li>
+                                            <li class="milk">
+                                                    <input name="radio_milk" type="radio" id="milk_cocos">
+                                                    <label for="milk_cocos">Кокосовое</label>
+                                            </li>
+                                            <li class="milk">
+                                                <input name="radio_milk" type="radio" id="sirop_oat">
+                                                <label for="sirop_oat">Овсяное</label>
+                                            </li>
+                                            <li class="milk">
+                                                    <input name="radio_milk" type="radio" id="sirop_almond">
+                                                    <label for="sirop_almond">Миндальное</label>
+                                            </li>	
+                                    </ul>
+                                </fieldset>
+                                <div class="count">
+                                    <label for="c">Количество</label>
+                                    <button type="button" class="minus">
+                                        -
+                                    </button>
+                                    <input type="number" value="1" min="1" step="1" id="c">
+                                    <button type="button" class="plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>	
+                        </li>
+                    </ul>
+                </section>
+                <section class="times">
+                    <h3>
+                        Время доставки
+                    </h3>
+                    <ul class="week">
+                        <li class="day">
+                            <input type="checkbox" id="pn"> 
+                            <label for="pn">пн</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="vt"> 
+                            <label for="vt">вт</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="sr"> 
+                            <label for="sr">ср</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="cht"> 
+                            <label for="cht">чт</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="pt"> 
+                            <label for="pt">пт</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="sb"> 
+                            <label for="sb">сб</label>
+                        </li>
+                        <li class="day">
+                            <input type="checkbox" id="vs"> 
+                            <label for="vs">вс</label>
+                        </li>         
+                    </ul>
+                    <input type="text" class="time" placeholder="13:00 - 13:30">
+                    <ul class="knopki"> 
+                        <li class="cancel">
+                                <a href="follow.html">Сбросить</a>
+                        </li>
+                        <li class="save">
+                            <a href="lk.html">Сохранить</a>
+                        </li>
+                    </ul>  
+                </section>
+
+
+                <script>
+                        "use strict";
+                        const drink = document.querySelector(".drink");
+                        document.querySelector(".drink > .press_drink").addEventListener("click", () => {
+                            drink.classList.toggle("drink_open");
+                        });
+                        
+                        const countPlus = document.querySelector(".count .plus");
+                        const countMinus = document.querySelector(".count .minus");
+                        const countInput = document.querySelector(".count input");
+                        countPlus.addEventListener("click", () => {
+                            countInput.valueAsNumber += 1; 
+                        });
+                        countMinus.addEventListener("click", () => {
+                            if (countInput.valueAsNumber > 1) {
+                                countInput.valueAsNumber -= 1; 
+                            }
+                            
+                        });
+    
+                        
+                </script> 
+			
+
+
+		</main>		
+	</body>
+</html>
